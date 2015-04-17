@@ -1,0 +1,17 @@
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\debug\anycpu\resources.pri
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\debug\anycpu\AppxManifest.xml
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\debug\anycpu\CordovaApp.Windows80.build.appxrecipe
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\bld\priconfig.xml
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\bld\priconfig.xml.intermediate
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\bld\layout.resfiles
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\bld\layout.resfiles.intermediate
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\bld\resources.resfiles
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\bld\resources.resfiles.intermediate
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\bld\pri.resfiles
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\bld\pri.resfiles.intermediate
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\bld\qualifiers.txt
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\bld\qualifiers.txt.intermediate
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\bld\MultipleQualifiersPerDimensionFound.txt
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\bld\ProjectArchitectures.txt
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\bld\package.map.txt
+f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\windows80\bld\_pkginfo.txt

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="com.example.randomexpression" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>240</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="config.xml" uri="ms-resource://com.example.randomexpression/Files/config.xml">
+				<Candidate type="Path">
+					<Value>config.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="SplashScreen.png" uri="ms-resource://com.example.randomexpression/Files/images/SplashScreen.png"/>
+				<NamedResource name="SplashScreenPhone.png" uri="ms-resource://com.example.randomexpression/Files/images/SplashScreenPhone.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\SplashScreenPhone.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://com.example.randomexpression/Files/images/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Square150x150Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square30x30Logo.png" uri="ms-resource://com.example.randomexpression/Files/images/Square30x30Logo.png"/>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://com.example.randomexpression/Files/images/Square310x310Logo.png"/>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://com.example.randomexpression/Files/images/Square44x44Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://com.example.randomexpression/Files/images/Square70x70Logo.png"/>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://com.example.randomexpression/Files/images/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Square71x71Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://com.example.randomexpression/Files/images/StoreLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\StoreLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://com.example.randomexpression/Files/images/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Wide310x150Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="www">
+				<NamedResource name="cordova.js" uri="ms-resource://com.example.randomexpression/Files/www/cordova.js">
+					<Candidate type="Path">
+						<Value>www\cordova.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="cordova_plugins.js" uri="ms-resource://com.example.randomexpression/Files/www/cordova_plugins.js">
+					<Candidate type="Path">
+						<Value>www\cordova_plugins.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="index.html" uri="ms-resource://com.example.randomexpression/Files/www/index.html">
+					<Candidate type="Path">
+						<Value>www\index.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LICENSE" uri="ms-resource://com.example.randomexpression/Files/www/LICENSE">
+					<Candidate type="Path">
+						<Value>www\LICENSE</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="phonegap.js" uri="ms-resource://com.example.randomexpression/Files/www/phonegap.js">
+					<Candidate type="Path">
+						<Value>www\phonegap.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="README.md" uri="ms-resource://com.example.randomexpression/Files/www/README.md">
+					<Candidate type="Path">
+						<Value>www\README.md</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="css">
+					<NamedResource name="index.css" uri="ms-resource://com.example.randomexpression/Files/www/css/index.css">
+						<Candidate type="Path">
+							<Value>www\css\index.css</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="img">
+					<NamedResource name="logo.png" uri="ms-resource://com.example.randomexpression/Files/www/img/logo.png">
+						<Candidate type="Path">
+							<Value>www\img\logo.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="phone-icon.png" uri="ms-resource://com.example.randomexpression/Files/www/img/phone-icon.png">
+						<Candidate type="Path">
+							<Value>www\img\phone-icon.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="question-icon.png" uri="ms-resource://com.example.randomexpression/Files/www/img/question-icon.png">
+						<Candidate type="Path">
+							<Value>www\img\question-icon.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="search-icon.png" uri="ms-resource://com.example.randomexpression/Files/www/img/search-icon.png">
+						<Candidate type="Path">
+							<Value>www\img\search-icon.png</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="js">
+					<NamedResource name="index.js" uri="ms-resource://com.example.randomexpression/Files/www/js/index.js">
+						<Candidate type="Path">
+							<Value>www\js\index.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="libs">
+					<NamedResource name="fastclick.min.js" uri="ms-resource://com.example.randomexpression/Files/www/libs/fastclick.min.js">
+						<Candidate type="Path">
+							<Value>www\libs\fastclick.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="jquery-2.0.3.min.js" uri="ms-resource://com.example.randomexpression/Files/www/libs/jquery-2.0.3.min.js">
+						<Candidate type="Path">
+							<Value>www\libs\jquery-2.0.3.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="jQM-flat">
+						<NamedResource name="jquery.mobile.flatui.css" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/jquery.mobile.flatui.css">
+							<Candidate type="Path">
+								<Value>www\libs\jQM-flat\jquery.mobile.flatui.css</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="jquery.mobile.flatui.min.css" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/jquery.mobile.flatui.min.css">
+							<Candidate type="Path">
+								<Value>www\libs\jQM-flat\jquery.mobile.flatui.min.css</Value>
+							</Candidate>
+						</NamedResource>
+						<ResourceMapSubtree name="fonts">
+							<NamedResource name="Flat-UI-Icons-24.ttf" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/fonts/Flat-UI-Icons-24.ttf">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\fonts\Flat-UI-Icons-24.ttf</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Flat-UI-Icons-24.woff" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/fonts/Flat-UI-Icons-24.woff">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\fonts\Flat-UI-Icons-24.woff</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="lato-black.ttf" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/fonts/lato-black.ttf">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\fonts\lato-black.ttf</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="lato-black.woff" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/fonts/lato-black.woff">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\fonts\lato-black.woff</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="lato-bold.ttf" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/fonts/lato-bold.ttf">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\fonts\lato-bold.ttf</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="lato-bold.woff" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/fonts/lato-bold.woff">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\fonts\lato-bold.woff</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="lato-italic.ttf" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/fonts/lato-italic.ttf">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\fonts\lato-italic.ttf</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="lato-italic.woff" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/fonts/lato-italic.woff">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\fonts\lato-italic.woff</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="lato-regular.ttf" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/fonts/lato-regular.ttf">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\fonts\lato-regular.ttf</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="lato-regular.woff" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/fonts/lato-regular.woff">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\fonts\lato-regular.woff</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="images">
+							<NamedResource name="ajax-loader.gif" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/images/ajax-loader.gif">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\images\ajax-loader.gif</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icons-18-black.png" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/images/icons-18-black.png">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\images\icons-18-black.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icons-18-white.png" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/images/icons-18-white.png">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\images\icons-18-white.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icons-36-black.png" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/images/icons-36-black.png">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\images\icons-36-black.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icons-36-white.png" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/images/icons-36-white.png">
+								<Candidate type="Path">
+									<Value>www\libs\jQM-flat\images\icons-36-white.png</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="jQueryMobile">
+						<NamedResource name="jquery.mobile-1.3.2.min.js" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQueryMobile/jquery.mobile-1.3.2.min.js">
+							<Candidate type="Path">
+								<Value>www\libs\jQueryMobile\jquery.mobile-1.3.2.min.js</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

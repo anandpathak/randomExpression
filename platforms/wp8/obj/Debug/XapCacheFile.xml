@@ -1,0 +1,22 @@
+﻿<xapCache source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\Bin\Debug\CordovaAppProj_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="4/14/2015 8:54:07 PM">
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\obj\Debug\com.example.randomexpression.dll" archivePath="com.example.randomexpression.dll" lastWriteTime="4/14/2015 8:53:59 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\config.xml" archivePath="config.xml" lastWriteTime="4/14/2015 8:53:34 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\www\cordova.js" archivePath="www\cordova.js" lastWriteTime="4/14/2015 8:53:34 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\www\cordova_plugins.js" archivePath="www\cordova_plugins.js" lastWriteTime="4/14/2015 8:53:34 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\www\css\index.css" archivePath="www\css\index.css" lastWriteTime="4/14/2015 8:53:34 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\www\img\logo.png" archivePath="www\img\logo.png" lastWriteTime="4/14/2015 8:53:34 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\www\index.html" archivePath="www\index.html" lastWriteTime="4/14/2015 8:53:34 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\www\js\index.js" archivePath="www\js\index.js" lastWriteTime="4/14/2015 8:53:34 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\Images\appbar.back.rest.png" archivePath="Images\appbar.back.rest.png" lastWriteTime="4/9/2015 9:05:50 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\Images\appbar.close.rest.png" archivePath="Images\appbar.close.rest.png" lastWriteTime="4/9/2015 9:05:50 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\Images\appbar.feature.video.rest.png" archivePath="Images\appbar.feature.video.rest.png" lastWriteTime="4/9/2015 9:05:50 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\Images\appbar.next.rest.png" archivePath="Images\appbar.next.rest.png" lastWriteTime="4/9/2015 9:05:50 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\Images\appbar.save.rest.png" archivePath="Images\appbar.save.rest.png" lastWriteTime="4/9/2015 9:05:50 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\Images\appbar.stop.rest.png" archivePath="Images\appbar.stop.rest.png" lastWriteTime="4/9/2015 9:05:50 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\VERSION" archivePath="VERSION" lastWriteTime="4/9/2015 9:05:50 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="4/9/2015 9:05:50 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="4/9/2015 9:07:41 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="4/9/2015 9:05:50 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\Bin\Debug\Background.png" archivePath="Background.png" lastWriteTime="4/9/2015 9:05:50 PM" />
+  <file source="f:\test\try\ionic\my-app\randomexpression\platforms\wp8\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="4/9/2015 9:07:44 PM" />
+</xapCache>
