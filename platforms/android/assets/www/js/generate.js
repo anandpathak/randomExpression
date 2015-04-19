@@ -1,5 +1,17 @@
 var exp=generate(5);
-alert(exp.expression);
+//alert(exp.expression);
+function showExpression()
+{
+    alert();
+    var answerbox=document.getElementById("answerBox");
+    var value="";
+    for(i=0;i<exp.randomize.length;i++)
+    {
+        value += "<div class='col-md-1'>"+exp.randomize[i]+"</div>";
+        
+    }
+    answerbox.innerHTML=value;
+}
 function generate(expSize)
 {   
      var operator=[];
