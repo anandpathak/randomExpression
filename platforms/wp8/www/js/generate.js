@@ -1,16 +1,22 @@
-var exp=generate(5);
+var exp=generate(9);
 //alert(exp.expression);
 function showExpression()
 {
     alert();
     var answerbox=document.getElementById("answerBox");
-    var value="";
+//    $(document).ready(function(){
+//        var inner = $('.inner'),
+//        ht = inner.height();
+//        inner.css({'position':'absolute','top':'50%','margin':-ht/2+'px 0 0 0'});
+//});
+    
+    var value="<div class='row'>";
     for(i=0;i<exp.randomize.length;i++)
     {
-        value += "<div class='col-md-1'>"+exp.randomize[i]+"</div>";
+        value += "<span class='col-md-1 smbox'>"+exp.randomize[i]+"</span>";
         
     }
-    answerbox.innerHTML=value;
+    answerbox.innerHTML=value+"</div>";
 }
 function generate(expSize)
 {   
