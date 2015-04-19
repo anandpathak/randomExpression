@@ -105,3 +105,7 @@ margin: .8em 30% .8em;
 .ui-icon-ms-search {
     background: url("../img/search-icon.png") 50% 50% no-repeat;
 }
+.answerBox {
+    border: 1px solid #000;
+      
+}
