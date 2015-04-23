@@ -1,2 +1,2 @@
 # randomExpression
-This is a simple game build using cordova with  html,javascript and css thechnology.
+This is a simple game build using apache cordova.
