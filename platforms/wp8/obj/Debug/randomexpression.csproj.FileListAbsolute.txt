@@ -12,3 +12,17 @@ f:\test\try\ionic\my-app\randomexpression\platforms\wp8\obj\Debug\com.example.ra
 f:\test\try\ionic\my-app\randomexpression\platforms\wp8\obj\Debug\com.example.randomexpression.dll
 f:\test\try\ionic\my-app\randomexpression\platforms\wp8\obj\Debug\com.example.randomexpression.pdb
 f:\test\try\ionic\my-app\randomexpression\platforms\wp8\obj\Debug\XapCacheFile.xml
+f:\test\try\ionic\randomexpression\platforms\wp8\Bin\Debug\ApplicationIcon.png
+f:\test\try\ionic\randomexpression\platforms\wp8\Bin\Debug\Background.png
+f:\test\try\ionic\randomexpression\platforms\wp8\Bin\Debug\com.example.randomexpression.dll
+f:\test\try\ionic\randomexpression\platforms\wp8\Bin\Debug\com.example.randomexpression.pdb
+f:\test\try\ionic\randomexpression\platforms\wp8\Bin\Debug\AppManifest.xaml
+f:\test\try\ionic\randomexpression\platforms\wp8\Bin\Debug\Properties\WMAppManifest.xml
+f:\test\try\ionic\randomexpression\platforms\wp8\Bin\Debug\CordovaAppProj_Debug_AnyCPU.xap
+f:\test\try\ionic\randomexpression\platforms\wp8\obj\Debug\App.g.cs
+f:\test\try\ionic\randomexpression\platforms\wp8\obj\Debug\cordovalib\CordovaView.g.cs
+f:\test\try\ionic\randomexpression\platforms\wp8\obj\Debug\MainPage.g.cs
+f:\test\try\ionic\randomexpression\platforms\wp8\obj\Debug\com.example.randomexpression.g.resources
+f:\test\try\ionic\randomexpression\platforms\wp8\obj\Debug\com.example.randomexpression.dll
+f:\test\try\ionic\randomexpression\platforms\wp8\obj\Debug\com.example.randomexpression.pdb
+f:\test\try\ionic\randomexpression\platforms\wp8\obj\Debug\XapCacheFile.xml

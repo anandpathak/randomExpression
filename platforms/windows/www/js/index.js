@@ -22,7 +22,7 @@ var app = {
 
     // Application Constructor
     initialize: function() {
-        console.log("console log init");
+//        console.log("console log init");
         this.bindEvents();
         this.initFastClick();
     },
@@ -40,7 +40,7 @@ var app = {
     },
     // Phonegap is now ready...
     onDeviceReady: function() {
-        console.log("device ready, start making you custom calls!");
+   //     console.log("device ready, start making you custom calls!");
 
         // Start adding your code here....
 

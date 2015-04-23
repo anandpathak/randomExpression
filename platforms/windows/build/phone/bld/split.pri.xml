@@ -107,6 +107,11 @@
 					</NamedResource>
 				</ResourceMapSubtree>
 				<ResourceMapSubtree name="js">
+					<NamedResource name="generate.js" uri="ms-resource://com.example.randomexpression/Files/www/js/generate.js">
+						<Candidate type="Path">
+							<Value>www\js\generate.js</Value>
+						</Candidate>
+					</NamedResource>
 					<NamedResource name="index.js" uri="ms-resource://com.example.randomexpression/Files/www/js/index.js">
 						<Candidate type="Path">
 							<Value>www\js\index.js</Value>

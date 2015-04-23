@@ -1,9 +1,17 @@
 var exp=generate(9);
 //alert(exp.expression);
-function showExpression()
+function playbuttonClicked()
 {
-    alert();
-    var answerbox=document.getElementById("answerBox");
+    var flag=1;
+    
+  //  alert();
+  //clearing answer box
+//    while (document.getElementById("answerBox").hasChildNodes()) {
+//        document.getElementById("answerBox").removeChild(node.lastChild);
+//}
+    document.getElementById("answerBox").innerHTML="";
+    
+    var randomExp=document.getElementById("randomExp");
 //    $(document).ready(function(){
 //        var inner = $('.inner'),
 //        ht = inner.height();
@@ -13,10 +21,19 @@ function showExpression()
     var value="<div class='row'>";
     for(i=0;i<exp.randomize.length;i++)
     {
-        value += "<span class='col-md-1 smbox'>"+exp.randomize[i]+"</span>";
+        value += "<span class='col-md-1 smbox' onclick='putanswer(this)'>"+exp.randomize[i]+"</span>";
         
     }
-    answerbox.innerHTML=value+"</div>";
+    randomExp.innerHTML=value+"</div>";
+}
+function putanswer(value)
+{
+    
+        document.getElementById("answerBox").appendChild(value);
+    //    resultCalculate();
+        document.getElementById("randomExpression").removeChild(value);
+    
+    // resultCalculate();
 }
 function generate(expSize)
 {   

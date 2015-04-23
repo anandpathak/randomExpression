@@ -5,7 +5,7 @@
     <autoResourcePackage qualifier="Scale" />
     <autoResourcePackage qualifier="DXFeatureLevel" />
   </packaging>
-  <index root="\" startIndexAt="f:\test\try\ionic\my-app\randomexpression\platforms\windows\build\phone\debug\anycpu\resources.pri">
+  <index root="\" startIndexAt="f:\test\try\ionic\randomexpression\platforms\windows\build\phone\debug\anycpu\resources.pri">
     <default>
       <qualifier name="Language" value="en-US" />
       <qualifier name="Contrast" value="standard" />

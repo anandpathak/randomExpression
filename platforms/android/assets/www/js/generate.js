@@ -1,22 +1,47 @@
 var exp=generate(9);
 //alert(exp.expression);
-function showExpression()
+function playbuttonClicked()
 {
-    alert();
-    var answerbox=document.getElementById("answerBox");
+    var flag=1;
+    
+  //  alert();
+  //clearing answer box
+//    while (document.getElementById("answerBox").hasChildNodes()) {
+//        document.getElementById("answerBox").removeChild(node.lastChild);
+//}
+    document.getElementById("answerBox").innerHTML="";
+    
+    var randomExp=document.getElementById("randomExp");
 //    $(document).ready(function(){
 //        var inner = $('.inner'),
 //        ht = inner.height();
 //        inner.css({'position':'absolute','top':'50%','margin':-ht/2+'px 0 0 0'});
 //});
     
-    var value="<div class='row'>";
+//    var value="<div class='row'>";
+      var value="";
     for(i=0;i<exp.randomize.length;i++)
     {
-        value += "<span class='col-md-1 smbox'>"+exp.randomize[i]+"</span>";
+        value += "<span class='col-md-1 smbox' onclick='putanswer(this)'>"+exp.randomize[i]+"</span>";
         
     }
-    answerbox.innerHTML=value+"</div>";
+    randomExp.innerHTML=value+"";
+}
+function putanswer(value)
+{
+    if(value.parentNode.id.toString()=="randomExp")
+    {
+        document.getElementById("answerBox").appendChild(value);
+    //    resultCalculate();
+        document.getElementById("randomExp").removeChild(value);
+    }
+    else
+    {
+         document.getElementById("randomExp").appendChild(value);
+    //    resultCalculate();
+        document.getElementById("answerBox").removeChild(value);
+    // resultCalculate();
+    }
 }
 function generate(expSize)
 {   

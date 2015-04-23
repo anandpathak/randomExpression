@@ -1,1 +1,1 @@
-f:\test\try\ionic\my-app\randomexpression\platforms\windows\CordovaApp.Phone.jsproj;neutral
+f:\test\try\ionic\randomexpression\platforms\windows\CordovaApp.Phone.jsproj;neutral
