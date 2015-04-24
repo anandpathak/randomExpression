@@ -18,22 +18,30 @@ function playbuttonClicked()
 //        inner.css({'position':'absolute','top':'50%','margin':-ht/2+'px 0 0 0'});
 //});
     
-    var value="<div class='row'>";
+//    var value="<div class='row'>";
+      var value="";
     for(i=0;i<exp.randomize.length;i++)
     {
         value += "<span class='col-md-1 smbox' onclick='putanswer(this)'>"+exp.randomize[i]+"</span>";
         
     }
-    randomExp.innerHTML=value+"</div>";
+    randomExp.innerHTML=value+"";
 }
 function putanswer(value)
 {
-    
+    if(value.parentNode.id.toString()=="randomExp")
+    {
         document.getElementById("answerBox").appendChild(value);
     //    resultCalculate();
-        document.getElementById("randomExpression").removeChild(value);
-    
+        document.getElementById("randomExp").removeChild(value);
+    }
+    else
+    {
+         document.getElementById("randomExp").appendChild(value);
+    //    resultCalculate();
+        document.getElementById("answerBox").removeChild(value);
     // resultCalculate();
+    }
 }
 function generate(expSize)
 {   
