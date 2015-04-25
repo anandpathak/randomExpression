@@ -1,14 +1,15 @@
-var exp=generate(9);
+
 //alert(exp.expression);
 function playbuttonClicked()
 {
-    var flag=1;
-    
+
+    var exp=generate(9);
   //  alert();
   //clearing answer box
 //    while (document.getElementById("answerBox").hasChildNodes()) {
 //        document.getElementById("answerBox").removeChild(node.lastChild);
 //}
+    document.getElementById("answer").innerHTML="=&nbsp;"+exp.ans+"&nbsp;&nbsp;&nbsp";
     document.getElementById("answerBox").innerHTML="";
     
     var randomExp=document.getElementById("randomExp");
