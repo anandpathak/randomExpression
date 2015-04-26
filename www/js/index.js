@@ -32,6 +32,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener("deviceready", this.onDeviceReady, false);
     },
     initFastClick : function() {
         window.addEventListener('load', function() {
@@ -41,8 +42,17 @@ var app = {
     // Phonegap is now ready...
     onDeviceReady: function() {
    //     console.log("device ready, start making you custom calls!");
-
+         
+        
         // Start adding your code here....
 
+         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, fail);
+        function onFileSystemSuccess(fileSystem) {
+            console.log(fileSystem.name);
+            console.log(fileSystem.root.name);
+        }
+        function fail(evt) {
+            console.log(evt.target.error.code);
+        }
     }
 };

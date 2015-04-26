@@ -1,14 +1,15 @@
-
+var answer;
 //alert(exp.expression);
 function playbuttonClicked()
 {
 
-    var exp=generate(9);
+    var exp=generate(5);
   //  alert();
   //clearing answer box
 //    while (document.getElementById("answerBox").hasChildNodes()) {
 //        document.getElementById("answerBox").removeChild(node.lastChild);
 //}
+    answer=exp.ans;
     document.getElementById("answer").innerHTML="=&nbsp;"+exp.ans+"&nbsp;&nbsp;&nbsp";
     document.getElementById("answerBox").innerHTML="";
     
@@ -32,16 +33,44 @@ function putanswer(value)
 {
     if(value.parentNode.id.toString()=="randomExp")
     {
+  //      alert(document.getElementById("randomExp").childNodes.length);
+//        alert();
         document.getElementById("answerBox").appendChild(value);
-    //    resultCalculate();
-        document.getElementById("randomExp").removeChild(value);
+    
+  //      document.getElementById("randomExp").removeChild(value);
+        resultCalculate();
     }
     else
     {
          document.getElementById("randomExp").appendChild(value);
     //    resultCalculate();
-        document.getElementById("answerBox").removeChild(value);
+  //      document.getElementById("answerBox").removeChild(value);
     // resultCalculate();
+    }
+}
+function resultCalculate()
+{
+    //check if length of randomExp is zero then match actual answer and the user answer 
+    if(document.getElementById("randomExp").childNodes.length <=0)
+    {
+        var answerExpression = document.getElementById("answerBox");
+        var currentexpression="";
+        for (var i = 0; i < answerExpression.childElementCount; i++)
+        {
+            currentexpression += answerExpression.childNodes[i].innerHTML;
+        }
+        try 
+        {
+            currentexpression = eval(currentexpression);
+            if(currentexpression == answer) {
+                alert("You Won !!");
+                playbuttonClicked();
+            }
+        }
+        catch(e)
+        {
+            alert(e);
+        }
     }
 }
 function generate(expSize)
