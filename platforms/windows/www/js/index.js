@@ -32,6 +32,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener("deviceready", this.onDeviceReady, false);
     },
     initFastClick : function() {
         window.addEventListener('load', function() {
@@ -41,8 +42,9 @@ var app = {
     // Phonegap is now ready...
     onDeviceReady: function() {
    //     console.log("device ready, start making you custom calls!");
-
+         
+        //alert(localStorage.getItem("data"));
         // Start adding your code here....
-
+        
     }
 };

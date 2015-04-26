@@ -20,7 +20,7 @@
                         </div>
                     <div id="menu">
                         <a data-icon="flat-heart" data-theme="d" href="#second-page" data-role="button" onclick="playbuttonClicked()">Play</a>
-                        <a data-icon="flat-time" data-theme="f" href="#due-page"  data-role="button">Levels</a>
+                        <a data-icon="flat-time" data-theme="f" href="#level-page"  data-role="button" onclick="levelbuttonclicked()">Levels</a>
                         <fieldset class="ui-grid-a">
                             <div class="ui-block-a"> <a data-icon="flat-checkround" data-theme="e" href="#tips-page"  data-role="button">Fake Btn</a></div>
                             <div class="ui-block-b"><a data-icon="ms-question" data-theme="g" href="#about-page"  data-role="button" >About</a></div>
@@ -109,6 +109,17 @@
                     <p>...</p>
                 </div>
             </div>
+            
+            <div  id="level-page" data-role="page">
+                <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
+                    <h1>Levels App</h1>
+                </div>
+                <div data-role="content"  class="big-text" id="levels">
+                </div>
+            </div>
+            
+            
         </div>
 
 

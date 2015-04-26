@@ -43,16 +43,8 @@ var app = {
     onDeviceReady: function() {
    //     console.log("device ready, start making you custom calls!");
          
-        
+        //alert(localStorage.getItem("data"));
         // Start adding your code here....
-
-         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, fail);
-        function onFileSystemSuccess(fileSystem) {
-            console.log(fileSystem.name);
-            console.log(fileSystem.root.name);
-        }
-        function fail(evt) {
-            console.log(evt.target.error.code);
-        }
+        
     }
 };

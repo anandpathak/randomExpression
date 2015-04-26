@@ -1,4 +1,40 @@
-﻿
+﻿var answer;
+    if(typeof localStorage.getItem("data") != undefined && localStorage.getItem("data") !=null)
+        {
+             var data=localStorage.getItem("data");
+            data=JSON.parse(data);
+            //alert(data) ;
+        }
+    else
+        {
+            var obj= {
+                "Name":"",
+                "Level":[ {"Name":"Easy","state":"on","solved":0,"size":5},
+                          {"Name":"Medium","state":"off","solved":0,"size":7},
+                          {"Name":"also Medium","state":"off","solved":0,"size":9}]
+                    };
+            localStorage.setItem("data",JSON.stringify(obj));
+            var data=JSON.parse(localStorage.getItem("data"));
+            //alert(localStorage.getItem("data"));
+    
+        }
+
+function levelbuttonclicked()
+{
+    var level=document.getElementById("levels");
+    var s="";
+    var x="";
+    for(i=0;i<data.Level.length;i++)
+    {
+        if(data.Level[i].state=="on")
+            x=" class='ison' onclick='levelselected()'>";
+        else
+            x=" class='isoff'>";
+        s=+"<h2 "+x+data.Level[i].name+"<h2>";
+    }
+    level.innerHTML=s;
+}
+
 //alert(exp.expression);
 function playbuttonClicked()
 {
@@ -9,6 +45,7 @@ function playbuttonClicked()
 //    while (document.getElementById("answerBox").hasChildNodes()) {
 //        document.getElementById("answerBox").removeChild(node.lastChild);
 //}
+    answer=exp.ans;
     document.getElementById("answer").innerHTML="=&nbsp;"+exp.ans+"&nbsp;&nbsp;&nbsp";
     document.getElementById("answerBox").innerHTML="";
     
@@ -61,8 +98,10 @@ function resultCalculate()
         try 
         {
             currentexpression = eval(currentexpression);
-            if(currentexpression.trim() == document.getElementById("answer").trim() )
-                alert(currentexpression);
+            if(currentexpression == answer) {
+                alert("You Won !!");
+                playbuttonClicked();
+            }
         }
         catch(e)
         {

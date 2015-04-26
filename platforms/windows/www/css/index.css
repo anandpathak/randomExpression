@@ -170,3 +170,11 @@ margin: .8em 30% .8em;
     background-color: rgb(240, 240, 240);
     display: inline-block;
 }
+.ison
+{
+    background-color: brown;
+}
+.isoff
+{
+    background-color: burlywood;
+}

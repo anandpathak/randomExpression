@@ -1,4 +1,61 @@
 var answer;
+    if(typeof localStorage.getItem("data") != undefined && localStorage.getItem("data") !=null)
+        {
+             var data=localStorage.getItem("data");
+            data=JSON.parse(data);
+            //alert(data) ;
+        }
+    else
+        {
+            var obj= {
+                "Name":"",
+                "Level":[ {"Name":"Easy","state":"on","solved":0,"size":5},
+                          {"Name":"Medium","state":"off","solved":0,"size":7},
+                          {"Name":"Difficult","state":"off","solved":0,"size":9}]
+                    };
+            localStorage.setItem("data",JSON.stringify(obj));
+            var data=JSON.parse(localStorage.getItem("data"));
+            //alert(localStorage.getItem("data"));
+    
+        }
+
+function levelClicked()
+{
+    var level=document.getElementById("levels");
+    var s="";
+    for(i=0;i<data.Level.length;i++)
+    {
+        if(data.Level[i].state=="on")
+        {
+            var j=0;var star="";
+            while(j < data.Level[i].solved)
+            {
+                star+="<span class='glyphicon glyphicon-star'></span>"
+                j++;
+            }
+            while(j<10)
+            {
+                star+="<span class='glyphicon glyphicon-star-empty'></span>"
+                j++;
+            }
+            s=s+"<h4 class='ison container' onclick='levelselected(onn)'>"+star+"<span class='pull-right'>"+data.Level[i].Name+"</span><h4>";
+            
+        }
+        else
+        {
+            var j=0;star="";
+            while(j<10)
+            {
+                star+="<span class='glyphicon glyphicon-star-empty'></span>"
+                j++;
+            }
+            s=s+"<h4 class='isoff container' onclick='levelselected(onn)'>"+star+"<span class='pull-right'>"+data.Level[i].Name+"</span><h4>";
+        }
+       
+    }
+    level.innerHTML=s;
+}
+
 //alert(exp.expression);
 function playbuttonClicked()
 {
