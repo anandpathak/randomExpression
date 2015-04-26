@@ -158,7 +158,7 @@ margin: .8em 30% .8em;
     display: inline-block;
 }
 .Answer:focus,.Answer:hover{
-   border: 1px solid rgb(150, 162, 180);
+    border: 1px solid rgb(150, 162, 180);
     -webkit-border-radius: 30px 30px 30px 30px;
     -moz-border-radius: 30px 30px 30px 30px;
     border-radius: 30px 30px 30px 30px;
@@ -172,9 +172,32 @@ margin: .8em 30% .8em;
 }
 .ison
 {
-    background-color: brown;
+     -webkit-border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid rgb(150, 162, 180);
+    background-color: rgb(250, 250, 250);
+    white-space: nowrap;
+    margin-top: 20px;
+}
+.ison:hover,.ison:focus
+{ 
+    -webkit-border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid rgb(150, 162, 180);
+    background-color: rgb(240, 240, 240);
+    white-space: nowrap;
+    cursor:pointer;
+    margin-top: 20px;
 }
 .isoff
 {
-    background-color: burlywood;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid rgb(150, 162, 180);
+    background-color: rgb(250, 250, 250);
+    white-space: nowrap;
+    margin-top: 20px;
 }

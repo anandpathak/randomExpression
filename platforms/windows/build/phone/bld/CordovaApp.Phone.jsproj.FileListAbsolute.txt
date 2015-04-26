@@ -165,3 +165,17 @@ f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\filemap.sca
 f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\filemap.generatedFiles.txt
 f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\main.map.txt
 f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\_pkginfo.txt
+f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\PackageLayout\www\libs\bootstrap-3.3.4-dist\js\bootstrap.js
+f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\PackageLayout\www\libs\bootstrap-3.3.4-dist\js\bootstrap.min.js
+f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\PackageLayout\www\libs\bootstrap-3.3.4-dist\js\npm.js
+f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\PackageLayout\www\libs\bootstrap-3.3.4-dist\css\bootstrap-theme.css
+f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\PackageLayout\www\libs\bootstrap-3.3.4-dist\css\bootstrap-theme.min.css
+f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\PackageLayout\www\libs\bootstrap-3.3.4-dist\css\bootstrap.css
+f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\PackageLayout\www\libs\bootstrap-3.3.4-dist\css\bootstrap.min.css
+f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\PackageLayout\www\libs\bootstrap-3.3.4-dist\css\bootstrap-theme.css.map
+f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\PackageLayout\www\libs\bootstrap-3.3.4-dist\css\bootstrap.css.map
+f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\PackageLayout\www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.eot
+f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\PackageLayout\www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.svg
+f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\PackageLayout\www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.ttf
+f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\PackageLayout\www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff
+f:\test\try\ionic\randomexpression\platforms\windows\build\phone\bld\PackageLayout\www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff2

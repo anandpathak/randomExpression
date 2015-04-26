@@ -129,6 +129,84 @@
 							<Value>www\libs\jquery-2.0.3.min.js</Value>
 						</Candidate>
 					</NamedResource>
+					<ResourceMapSubtree name="bootstrap-3.3.4-dist">
+						<ResourceMapSubtree name="css">
+							<NamedResource name="bootstrap-theme.css" uri="ms-resource://com.example.randomexpression/Files/www/libs/bootstrap-3.3.4-dist/css/bootstrap-theme.css">
+								<Candidate type="Path">
+									<Value>www\libs\bootstrap-3.3.4-dist\css\bootstrap-theme.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="bootstrap-theme.css.map" uri="ms-resource://com.example.randomexpression/Files/www/libs/bootstrap-3.3.4-dist/css/bootstrap-theme.css.map">
+								<Candidate type="Path">
+									<Value>www\libs\bootstrap-3.3.4-dist\css\bootstrap-theme.css.map</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="bootstrap-theme.min.css" uri="ms-resource://com.example.randomexpression/Files/www/libs/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css">
+								<Candidate type="Path">
+									<Value>www\libs\bootstrap-3.3.4-dist\css\bootstrap-theme.min.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="bootstrap.css" uri="ms-resource://com.example.randomexpression/Files/www/libs/bootstrap-3.3.4-dist/css/bootstrap.css">
+								<Candidate type="Path">
+									<Value>www\libs\bootstrap-3.3.4-dist\css\bootstrap.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="bootstrap.css.map" uri="ms-resource://com.example.randomexpression/Files/www/libs/bootstrap-3.3.4-dist/css/bootstrap.css.map">
+								<Candidate type="Path">
+									<Value>www\libs\bootstrap-3.3.4-dist\css\bootstrap.css.map</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="bootstrap.min.css" uri="ms-resource://com.example.randomexpression/Files/www/libs/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+								<Candidate type="Path">
+									<Value>www\libs\bootstrap-3.3.4-dist\css\bootstrap.min.css</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="fonts">
+							<NamedResource name="glyphicons-halflings-regular.eot" uri="ms-resource://com.example.randomexpression/Files/www/libs/bootstrap-3.3.4-dist/fonts/glyphicons-halflings-regular.eot">
+								<Candidate type="Path">
+									<Value>www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.eot</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="glyphicons-halflings-regular.svg" uri="ms-resource://com.example.randomexpression/Files/www/libs/bootstrap-3.3.4-dist/fonts/glyphicons-halflings-regular.svg">
+								<Candidate type="Path">
+									<Value>www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.svg</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="glyphicons-halflings-regular.ttf" uri="ms-resource://com.example.randomexpression/Files/www/libs/bootstrap-3.3.4-dist/fonts/glyphicons-halflings-regular.ttf">
+								<Candidate type="Path">
+									<Value>www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.ttf</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="glyphicons-halflings-regular.woff" uri="ms-resource://com.example.randomexpression/Files/www/libs/bootstrap-3.3.4-dist/fonts/glyphicons-halflings-regular.woff">
+								<Candidate type="Path">
+									<Value>www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="glyphicons-halflings-regular.woff2" uri="ms-resource://com.example.randomexpression/Files/www/libs/bootstrap-3.3.4-dist/fonts/glyphicons-halflings-regular.woff2">
+								<Candidate type="Path">
+									<Value>www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff2</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="js">
+							<NamedResource name="bootstrap.js" uri="ms-resource://com.example.randomexpression/Files/www/libs/bootstrap-3.3.4-dist/js/bootstrap.js">
+								<Candidate type="Path">
+									<Value>www\libs\bootstrap-3.3.4-dist\js\bootstrap.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="bootstrap.min.js" uri="ms-resource://com.example.randomexpression/Files/www/libs/bootstrap-3.3.4-dist/js/bootstrap.min.js">
+								<Candidate type="Path">
+									<Value>www\libs\bootstrap-3.3.4-dist\js\bootstrap.min.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="npm.js" uri="ms-resource://com.example.randomexpression/Files/www/libs/bootstrap-3.3.4-dist/js/npm.js">
+								<Candidate type="Path">
+									<Value>www\libs\bootstrap-3.3.4-dist\js\npm.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
 					<ResourceMapSubtree name="jQM-flat">
 						<NamedResource name="jquery.mobile.flatui.css" uri="ms-resource://com.example.randomexpression/Files/www/libs/jQM-flat/jquery.mobile.flatui.css">
 							<Candidate type="Path">

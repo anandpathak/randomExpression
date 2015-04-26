@@ -78,6 +78,15 @@
     <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\js\index.js">
       <PackagePath>www\js\index.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\bootstrap-3.3.4-dist\js\bootstrap.js">
+      <PackagePath>www\libs\bootstrap-3.3.4-dist\js\bootstrap.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\bootstrap-3.3.4-dist\js\bootstrap.min.js">
+      <PackagePath>www\libs\bootstrap-3.3.4-dist\js\bootstrap.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\bootstrap-3.3.4-dist\js\npm.js">
+      <PackagePath>www\libs\bootstrap-3.3.4-dist\js\npm.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\fastclick.min.js">
       <PackagePath>www\libs\fastclick.min.js</PackagePath>
     </AppxPackagedFile>
@@ -93,6 +102,18 @@
     <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\css\index.css">
       <PackagePath>www\css\index.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\bootstrap-3.3.4-dist\css\bootstrap-theme.css">
+      <PackagePath>www\libs\bootstrap-3.3.4-dist\css\bootstrap-theme.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\bootstrap-3.3.4-dist\css\bootstrap-theme.min.css">
+      <PackagePath>www\libs\bootstrap-3.3.4-dist\css\bootstrap-theme.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\bootstrap-3.3.4-dist\css\bootstrap.css">
+      <PackagePath>www\libs\bootstrap-3.3.4-dist\css\bootstrap.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\bootstrap-3.3.4-dist\css\bootstrap.min.css">
+      <PackagePath>www\libs\bootstrap-3.3.4-dist\css\bootstrap.min.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\jQM-flat\jquery.mobile.flatui.css">
       <PackagePath>www\libs\jQM-flat\jquery.mobile.flatui.css</PackagePath>
     </AppxPackagedFile>
@@ -101,6 +122,21 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\index.html">
       <PackagePath>www\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\bootstrap-3.3.4-dist\css\bootstrap-theme.css.map">
+      <PackagePath>www\libs\bootstrap-3.3.4-dist\css\bootstrap-theme.css.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\bootstrap-3.3.4-dist\css\bootstrap.css.map">
+      <PackagePath>www\libs\bootstrap-3.3.4-dist\css\bootstrap.css.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.eot">
+      <PackagePath>www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.svg">
+      <PackagePath>www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.ttf">
+      <PackagePath>www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.ttf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\jQM-flat\fonts\Flat-UI-Icons-24.ttf">
       <PackagePath>www\libs\jQM-flat\fonts\Flat-UI-Icons-24.ttf</PackagePath>
@@ -117,6 +153,9 @@
     <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\jQM-flat\fonts\lato-regular.ttf">
       <PackagePath>www\libs\jQM-flat\fonts\lato-regular.ttf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff">
+      <PackagePath>www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\jQM-flat\fonts\Flat-UI-Icons-24.woff">
       <PackagePath>www\libs\jQM-flat\fonts\Flat-UI-Icons-24.woff</PackagePath>
     </AppxPackagedFile>
@@ -131,6 +170,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\jQM-flat\fonts\lato-regular.woff">
       <PackagePath>www\libs\jQM-flat\fonts\lato-regular.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff2">
+      <PackagePath>www\libs\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff2</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="f:\test\try\ionic\randomexpression\platforms\windows\www\libs\jQM-flat\images\ajax-loader.gif">
       <PackagePath>www\libs\jQM-flat\images\ajax-loader.gif</PackagePath>

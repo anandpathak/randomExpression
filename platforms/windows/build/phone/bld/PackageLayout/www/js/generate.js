@@ -1,13 +1,74 @@
-﻿var exp=generate(9);
+﻿var answer;
+    if(typeof localStorage.getItem("data") != undefined && localStorage.getItem("data") !=null)
+        {
+             var data=localStorage.getItem("data");
+            data=JSON.parse(data);
+            //alert(data) ;
+        }
+    else
+        {
+            var obj= {
+                "Name":"",
+                "Level":[ {"Name":"Easy","state":"on","solved":0,"size":5},
+                          {"Name":"Medium","state":"off","solved":0,"size":7},
+                          {"Name":"Difficult","state":"off","solved":0,"size":9}]
+                    };
+            localStorage.setItem("data",JSON.stringify(obj));
+            var data=JSON.parse(localStorage.getItem("data"));
+            //alert(localStorage.getItem("data"));
+    
+        }
+
+function levelClicked()
+{
+    var level=document.getElementById("levels");
+    var s="";
+    for(i=0;i<data.Level.length;i++)
+    {
+        if(data.Level[i].state=="on")
+        {
+            var j=0;var star="";
+            while(j < data.Level[i].solved)
+            {
+                star+="<span class='glyphicon glyphicon-star'></span>"
+                j++;
+            }
+            while(j<10)
+            {
+                star+="<span class='glyphicon glyphicon-star-empty'></span>"
+                j++;
+            }
+            s=s+"<h4 class='ison container' onclick='levelselected(onn)'>"+star+"<span class='pull-right'>"+data.Level[i].Name+"</span><h4>";
+            
+        }
+        else
+        {
+            var j=0;star="";
+            while(j<10)
+            {
+                star+="<span class='glyphicon glyphicon-star-empty'></span>"
+                j++;
+            }
+            s=s+"<h4 class='isoff container' onclick='levelselected(onn)'>"+star+"<span class='pull-right'>"+data.Level[i].Name+"</span><h4>";
+        }
+       
+    }
+    level.innerHTML=s;
+}
+
 //alert(exp.expression);
 function playbuttonClicked()
 {
-    var flag=1;
+
+    var exp=generate(5);
   //  alert();
   //clearing answer box
-//    while (getElementById("answerBox").hasChildNodes()) {
-//        getElementById("answerBox").removeChild(node.lastChild);
+//    while (document.getElementById("answerBox").hasChildNodes()) {
+//        document.getElementById("answerBox").removeChild(node.lastChild);
 //}
+    answer=exp.ans;
+    document.getElementById("answer").innerHTML="=&nbsp;"+exp.ans+"&nbsp;&nbsp;&nbsp";
+    document.getElementById("answerBox").innerHTML="";
     
     var randomExp=document.getElementById("randomExp");
 //    $(document).ready(function(){
@@ -15,28 +76,59 @@ function playbuttonClicked()
 //        ht = inner.height();
 //        inner.css({'position':'absolute','top':'50%','margin':-ht/2+'px 0 0 0'});
 //});
-    flag=0;
-    var value="<div class='row'>";
+    
+//    var value="<div class='row'>";
+      var value="";
     for(i=0;i<exp.randomize.length;i++)
     {
-        value += "<span class='col-md-1 smbox' onclick='putanswer(this,flag)'>"+exp.randomize[i]+"</span>";
+        value += "<span class='col-md-1 smbox' onclick='putanswer(this)'>"+exp.randomize[i]+"</span>";
         
     }
-    randomExp.innerHTML=value+"</div>";
+    randomExp.innerHTML=value+"";
 }
-function putanswer(value,flag)
+function putanswer(value)
 {
-    if(flag==0)
+    if(value.parentNode.id.toString()=="randomExp")
     {
-     document.getElementById("answerBox").appendChild(value);
+  //      alert(document.getElementById("randomExp").childNodes.length);
+//        alert();
+        document.getElementById("answerBox").appendChild(value);
+    
+  //      document.getElementById("randomExp").removeChild(value);
+        resultCalculate();
+    }
+    else
+    {
+         document.getElementById("randomExp").appendChild(value);
     //    resultCalculate();
-     document.getElementById("randomExpression").removeChild(value);
-    }
-    else if (flag==1)
-    {
-        
-    }
+  //      document.getElementById("answerBox").removeChild(value);
     // resultCalculate();
+    }
+}
+function resultCalculate()
+{
+    //check if length of randomExp is zero then match actual answer and the user answer 
+    if(document.getElementById("randomExp").childNodes.length <=0)
+    {
+        var answerExpression = document.getElementById("answerBox");
+        var currentexpression="";
+        for (var i = 0; i < answerExpression.childElementCount; i++)
+        {
+            currentexpression += answerExpression.childNodes[i].innerHTML;
+        }
+        try 
+        {
+            currentexpression = eval(currentexpression);
+            if(currentexpression == answer) {
+                alert("You Won !!");
+                playbuttonClicked();
+            }
+        }
+        catch(e)
+        {
+            alert(e);
+        }
+    }
 }
 function generate(expSize)
 {   

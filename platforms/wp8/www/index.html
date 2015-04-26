@@ -7,7 +7,7 @@
           
         <link rel="stylesheet"  href="libs/jQM-flat/jquery.mobile.flatui.css">
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libs/bootstrap-3.3.4-dist/css/bootstrap.min.css">
 
         <title>App Name</title>
     </head>
@@ -20,7 +20,7 @@
                         </div>
                     <div id="menu">
                         <a data-icon="flat-heart" data-theme="d" href="#second-page" data-role="button" onclick="playbuttonClicked()">Play</a>
-                        <a data-icon="flat-time" data-theme="f" href="#level-page"  data-role="button" onclick="levelbuttonclicked()">Levels</a>
+                        <a data-icon="flat-time" data-theme="f" href="#level-page"  data-role="button" onclick="levelClicked()">Levels</a>
                         <fieldset class="ui-grid-a">
                             <div class="ui-block-a"> <a data-icon="flat-checkround" data-theme="e" href="#tips-page"  data-role="button">Fake Btn</a></div>
                             <div class="ui-block-b"><a data-icon="ms-question" data-theme="g" href="#about-page"  data-role="button" >About</a></div>
@@ -113,9 +113,9 @@
             <div  id="level-page" data-role="page">
                 <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
                     <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
-                    <h1>Levels App</h1>
+                    <h1>Levels </h1>
                 </div>
-                <div data-role="content"  class="big-text" id="levels">
+                <div data-role="content"   class="big-text" id="levels">
                 </div>
             </div>
             
@@ -129,7 +129,7 @@
         <script type="text/javascript" src="libs/jQueryMobile/jquery.mobile-1.3.2.min.js"></script>
         <script type="text/javascript" src="js/generate.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-
+        <script type="text/javascript" src="libs/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
