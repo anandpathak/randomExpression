@@ -201,3 +201,17 @@ margin: .8em 30% .8em;
     white-space: nowrap;
     margin-top: 20px;
 }
+.levels-container
+{
+}
+.table th, .table td { 
+     border-top: none !important; 
+     text-align: center; 
+    height: 100%;
+ }
+.level-box
+ {
+     background-color:aqua;
+     width:80%;
+      
+ }

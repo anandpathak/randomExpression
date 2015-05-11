@@ -21,42 +21,66 @@ var answer;
 
 function levelClicked()
 {
-    var level=document.getElementById("levels");
-    var s="";
-    for(i=0;i<data.Level.length;i++)
-    {
-        if(data.Level[i].state=="on")
-        {
-            var j=0;var star="";
-            while(j < data.Level[i].solved)
+    var i=0;
+    var x=levelclickedpartial(i);
+    var numberOfLevels=data.Level.length;
+    $("#level-page").on("swiperight",function(){
+            if(i<numberOfLevels -1)
             {
-                star+="<span class='glyphicon glyphicon-star'></span>"
-                j++;
+                i=i+1;
+                x=levelclickedpartial(i)
+                
             }
-            while(j<10)
+        });                       
+    $("#level-page").on("swipeleft",function(){
+           if(i>0)
             {
-                star+="<span class='glyphicon glyphicon-star-empty'></span>"
-                j++;
+                i=i-1;
+               x= levelclickedpartial(i)
+                
             }
-            s=s+"<h4 class='ison container' onclick='levelselected(onn)'>"+star+"<span class='pull-right'>"+data.Level[i].Name+"</span><h4>";
-            
-        }
-        else
-        {
-            var j=0;star="";
-            while(j<10)
-            {
-                star+="<span class='glyphicon glyphicon-star-empty'></span>"
-                j++;
-            }
-            s=s+"<h4 class='isoff container' onclick='levelselected(onn)'>"+star+"<span class='pull-right'>"+data.Level[i].Name+"</span><h4>";
-        }
-       
-    }
-    level.innerHTML=s;
+        });
 }
 
 //alert(exp.expression);
+function levelclickedpartial(i)
+{
+    var level=document.getElementById("levels");
+    var header=document.getElementById("levelname");
+    var numberOfLevels=data.Level.length;
+ //   var s="<table class='levels-container'><tr>";
+    var s="<div class='table-responsive'><table class='levels-container table'>";
+    var count=0;
+    header.innerHTML=data.Level[i].Name;
+    for(var j=0; j< 4 ;j++)
+    {
+         s+="<tr>";
+        for(var k=0;k< 5; k++)
+        {
+        
+            if(count < 10)
+            {
+                if(count < data.Level[i].solved)
+                    s+="<td onclick=''><div class='level-box playable'><span class='glyphicon glyphicon-ok-sign'></span></div></td>";
+                else
+                    s+="<td><div class='level-box playable'><span class='glyphicon glyphicon-ban-circle'></span></div></td>";
+            }
+            
+            count++;
+        }
+        s+="</tr>";
+        
+    }
+//    alert(s);
+    var prevNext="";
+    if(i > 0 )
+        prevNext="<span class='pull-left' onclick='levelclickedpartial("+Number(i-1)+")'><span class='glyphicon glyphicon-arrow-left'></span></span>";
+    
+    if(i < numberOfLevels -1)
+        prevNext+="<span class='pull-right' onclick='levelclickedpartial("+Number(i+1)+")'><span class='glyphicon glyphicon-arrow-right'></span></span>";
+    level.innerHTML=s+"</tr></table>"+prevNext;
+    return false;
+}
 function playbuttonClicked()
 {
 
