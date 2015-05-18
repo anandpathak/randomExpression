@@ -55,7 +55,7 @@ function levelclickedpartial(i)
     for(var j=0; j< 4 ;j++)
     {
          s+="<tr>";
-        for(var k=0;k< 5; k++)
+        for(var k=0;k< 3; k++)
         {
         
             if(count < 10)

@@ -65,6 +65,7 @@ function levelclickedpartial(i)
                 else
                     s+="<td><div class='level-box playable'><span class='glyphicon glyphicon-ban-circle'></span></div></td>";
             }
+            
             count++;
         }
         s+="</tr>";
