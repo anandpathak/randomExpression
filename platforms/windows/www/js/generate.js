@@ -25,7 +25,7 @@
                     "star": 1
                 }
                                 , {
-                    "flag": false,
+                    "flag": true,
                     "star": 0
                 }
                                 , {
@@ -198,10 +198,20 @@ function levelclickedpartial(i)
                 {
                     var tmp1= "<span class ='glyphicon glyphicon-star'></span>";
                     var tmp="";
+                    var tmp2="";
                     var temp1=0;
                     while(temp1++ < data.Level[i].solved[count].star)
+                    {
+                        
                         tmp+=tmp1;
-                   s+="<td onclick=''><div class='level-box playable'><span class ='glyphicon glyphicon-play-circle'></span><br/>"+tmp+"</div></td>";
+                        
+                    }
+                    if(!data.Level[i].solved[count].star)
+                    {    tmp= "<span class='glyphicon glyphicon-star-empty'></span></span>";
+                         tmp2= "heart";
+                            
+                    }
+                   s+="<td onclick=''><div class='level-box playable "+tmp2+"'><span class ='glyphicon glyphicon-play-circle'></span><br/>"+tmp+"</div></td>";
                 }
                 else
                 {

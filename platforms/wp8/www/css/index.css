@@ -217,3 +217,14 @@ margin: .8em 30% .8em;
      -webkit-border-radius: 30px; 
      -moz-border-radius: 30px;
  }
+.heart {
+
+	color: #e00;
+	animation: beat .25s infinite alternate;
+	transform-origin: center;
+}
+
+/* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(1.4); }
+}
