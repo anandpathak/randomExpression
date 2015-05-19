@@ -11,6 +11,7 @@ var answer;
     "Level": [{
             "Name": "Easy",
             "state": "on",
+            "expsize":5,
             "solved": [
                 {
                     "flag": true,
@@ -57,6 +58,7 @@ var answer;
         {
             "Name": "Medium",
             "state": "off",
+            "expsize":7,
             "solved": [
                 {
                     "flag": false,
@@ -103,6 +105,7 @@ var answer;
         {
             "Name": "Difficult",
             "state": "off",
+             "expsize":5,
             "solved": [
                 {
                     "flag": false,
@@ -211,7 +214,7 @@ function levelclickedpartial(i)
                          tmp2= "heart";
                             
                     }
-                   s+="<td onclick=''><div class='level-box playable "+tmp2+"'><span class ='glyphicon glyphicon-play-circle'></span><br/>"+tmp+"</div></td>";
+                   s+="<td><a href='#second-page' onclick='playbuttonClicked("+i+","+count+")' ><div class='level-box playable "+tmp2+"'><span class ='glyphicon glyphicon-play-circle'></span><br/>"+tmp+"</div></a></td>";
                 }
                 else
                 {
@@ -235,10 +238,14 @@ function levelclickedpartial(i)
     level.innerHTML=s+"</tr></table>"+prevNext;
     return false;
 }
-function playbuttonClicked()
+function playbuttonClicked(level,count)
 {
-
-    var exp=generate(5);
+   if(typeof data.Level[level].expsize ) 
+       var exp=generate(data.Level[level].expsize);
+    else
+    {
+        //go and bring the level whose status is true and star is zero
+    }
   //  alert();
   //clearing answer box
 //    while (document.getElementById("answerBox").hasChildNodes()) {

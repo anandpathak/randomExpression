@@ -109,7 +109,22 @@ margin: .8em 30% .8em;
     margin-bottom: 2%;
     margin-top: 2%;
 }
+a:link {
+  text-decoration: none;
+  
+}
 
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+   text-decoration: none;
+} 
 .smbox{
     border: 1px solid #fff;
     -webkit-border-radius: 30px 30px 30px 30px;
@@ -191,6 +206,7 @@ margin: .8em 30% .8em;
     cursor:pointer;
     margin-top: 20px;
 }
+
 .isoff
 {
     -webkit-border-radius: 30px 30px 30px 30px;
@@ -217,13 +233,61 @@ margin: .8em 30% .8em;
      -webkit-border-radius: 30px; 
      -moz-border-radius: 30px;
  }
-..heart {
 
+.heart {
+	-webkit-animation: beat .4s infinite alternate;
+	-moz-animation: beat .4s infinite alternate;
+	-ms-animation: beat .4s infinite alternate;
+	-o-animation: beat .4s infinite alternate;
 	animation: beat .4s infinite alternate;
+
+	-webkit-transform-origin: center;
+	-moz-transform-origin: center;
+	-o-transform-origin: center;
+	-ms-transform-origin: center;
 	transform-origin: center;
 }
 
-/* Heart beat animation */
-@keyframes beat{
-	to { transform: scale(1.1); }
+
+@keyframes "beat" {
+ to {
+    -webkit-transform: scale(1.1);
+   	-moz-transform: scale(1.1);
+   	-o-transform: scale(1.1);
+   	-ms-transform: scale(1.1);
+   	transform: scale(1.1);
+ }
+
+}
+
+@-moz-keyframes beat {
+ to {
+   -moz-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+
+}
+
+@-webkit-keyframes "beat" {
+ to {
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+
+}
+
+@-ms-keyframes "beat" {
+ to {
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+
+}
+
+@-o-keyframes "beat" {
+ to {
+   -o-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+
 }
