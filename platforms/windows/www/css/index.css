@@ -211,7 +211,9 @@ margin: .8em 30% .8em;
  }
 .level-box
  {
-     background-color:aqua;
+     background-color:rgb(218, 76, 76);
      width:80%;
-      
+     border-radius: 30px;
+     -webkit-border-radius: 30px; 
+     -moz-border-radius: 30px;
  }

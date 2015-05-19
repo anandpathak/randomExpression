@@ -6,13 +6,147 @@
             //alert(data) ;
         }
     else
+        {var obj = {
+    "Name": "",
+    "Level": [{
+            "Name": "Easy",
+            "state": "on",
+            "solved": [
+                {
+                    "flag": true,
+                    "star": 3
+                }
+                                , {
+                    "flag": true,
+                    "star": 2
+                }
+                                , {
+                    "flag": true,
+                    "star": 1
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }],
+            "size": 5
+        },
         {
-            var obj= {
-                "Name":"",
-                "Level":[ {"Name":"Easy","state":"on","solved":0,"size":5},
-                          {"Name":"Medium","state":"off","solved":0,"size":7},
-                          {"Name":"Difficult","state":"off","solved":0,"size":9}]
-                    };
+            "Name": "Medium",
+            "state": "off",
+            "solved": [
+                {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }],
+            "size": 7
+        },
+        {
+            "Name": "Difficult",
+            "state": "off",
+            "solved": [
+                {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }
+                                , {
+                    "flag": false,
+                    "star": 0
+                }],
+            "size": 9
+        }]
+};
             localStorage.setItem("data",JSON.stringify(obj));
             var data=JSON.parse(localStorage.getItem("data"));
             //alert(localStorage.getItem("data"));
@@ -60,10 +194,20 @@ function levelclickedpartial(i)
         
             if(count < 10)
             {
-                if(count < data.Level[i].solved)
-                    s+="<td onclick=''><div class='level-box playable'><span class='glyphicon glyphicon-ok-sign'></span></div></td>";
+                if( data.Level[i].solved[count].flag)
+                {
+                    var tmp1= "<span class ='glyphicon glyphicon-star'></span>";
+                    var tmp="";
+                    var temp1=0;
+                    while(temp1++ < data.Level[i].solved[count].star)
+                        tmp+=tmp1;
+                   s+="<td onclick=''><div class='level-box playable'><span class ='glyphicon glyphicon-play-circle'></span><br/>"+tmp+"</div></td>";
+                }
                 else
-                    s+="<td><div class='level-box playable'><span class='glyphicon glyphicon-ban-circle'></span></div></td>";
+                {
+                    var tmp="<span class='glyphicon glyphicon-lock'></span><span class='glyphicon glyphicon-lock'></span><br/><span class='glyphicon glyphicon-lock'></span>";
+                    s+="<td><div class='level-box playable'>"+tmp+"</div></td>";
+                }
             }
             
             count++;
