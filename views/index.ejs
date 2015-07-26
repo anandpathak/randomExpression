@@ -27,6 +27,7 @@
 		.main
 		{
 			text-align : center;
+			
 		}
 		.footer
 		{
@@ -38,12 +39,77 @@
 			height: 40%;
 			width: 100%;
 		}
+		div#playarea {
+  			text-align: center;
+		}
+		.playbutton {
+		    border: 3px solid #ffffff;
+			display: inline;
+    		padding-left: 5%;
+    		padding-right: 5%;
+    		font-size: 3.6em;
+    		background-color: #92C992;
+    		cursor: pointer;
+		}
+		.playbutton:hover, focus {
+		    border: 3px solid #ffffff;
+		    display: inline;
+		    padding-left: 5%;
+		    padding-right: 5%;
+		    font-size: 3.6em;
+		    background-color: #638963;
+		    cursor: pointer;
+		}
+		.numberBox {
+		    padding-left: 2%;
+		    padding-right: 2%;
+		    border: 1px solid #fff;
+		    margin-left: 10px;
+		    display: inline-block;
+		    font-size: 2.5em;
+		}
+		.numberBox:hover, focus {
+		    padding-left: 2%;
+		    padding-right: 2%;
+		    border: 1px solid #fff;
+		    margin-left: 10px;
+		    display: inline-block;
+		    font-size: 2.5em;
+		    cursor: pointer;
+		    background-color: beige;
+		}
 		</style>
 	<head>
 	<body>
-		<div class="main"><h2>Random Expression<h2></div>
-		<div id="playarea"></div>
+		<div class="main"><h2>Random Expression</h2></div>
+		<div id="playarea">
+			<div class='playbutton' onclick="askforexpression()">Play</div>
+		</div>
 		<div class="footer">I m footer</div>
-				
+		<script type="text/javascript" src="./javascripts/UIcontrol.js"></script>
+		<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+		<script>
+		  var socket = io.connect('http://localhost:81');
+		  socket.on('start', function (data) {
+		  });
+		  socket.emit('my other event', { my: 'data' });
+		  function askforexpression()
+		  {
+		  	socket.emit('give_exp',{});
+		  	socket.on('get_exp',function(expression){
+		  		var expressionArray=expression.exp;
+		  		var playarea = document.getElementById('playarea');
+		  		while (playarea.firstChild) {
+ 				   playarea.removeChild(playarea.firstChild);
+				}
+				var expressionDOM="";
+				for(var i=0 ; i < expressionArray.length;i++)
+				{
+					expressionDOM+="<div class='numberBox'>"+expressionArray[i]+"</div>";
+				}
+				playarea.innerHTML=expressionDOM;
+		  	});
+		  }
+		</script>
 	</body>
 </html>
