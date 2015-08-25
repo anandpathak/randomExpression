@@ -1,5 +1,5 @@
 # randomExpression
-Its simpler than you think but harder than you can imagine.
+Its a simple Game but not so simple.
 <h3>What kind of game is it ? </h3>
 A simple Maths puzzle game where You have an expression, but not in proper order and you have result of the given expression, what you need to do is rearrage in an
 order such that it matches to the answer. Very simple So try it !
