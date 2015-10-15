@@ -1,8 +1,219 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{
+			background-color: darkseagreen;
+			font-family: 'Open Sans Condensed', sans-serif;
+			width:99%;
+			font-size: 3em;
+		}
+		
+		h2
+		{
+			  display: block;
+			  /*font-size: 2.5em;*/
+			  -webkit-margin-before: 0.93em;
+			  -webkit-margin-after: 0.93em;
+			  -webkit-margin-start: 0px;
+			  -webkit-margin-end: 0px;
+			  font-weight: normal;
+		}		
+		.main
+		{
+			text-align : center;
+			
+		}
+		.footer
+		{
+			clear: both;
+			position: absolute;
+			bottom: 2%;
+			background-color: #716666;
+			clear: both;
+			height: 30%;
+			width: 100%;
+		}
+		div#playarea {
+  			text-align: center;
+		}
+		.playbutton {
+		    border: 3px solid #ffffff;
+			display: inline;
+    		padding-left: 5%;
+    		padding-right: 5%;
+    		/*font-size: 3.6em;*/
+    		background-color: #92C992;
+    		cursor: pointer;
+		}
+		.playbutton:hover, focus {
+		    border: 3px solid #ffffff;
+		    display: inline;
+		    padding-left: 5%;
+		    padding-right: 5%;
+		    /*font-size: 3.6em;*/
+		    background-color: #638963;
+		    cursor: pointer;
+		}
+		.numberBox {
+		    padding-left: 2%;
+		    padding-right: 2%;
+		    border: 1px solid #fff;
+		    margin-left: 10px;
+		    display: inline-block;
+		    /*font-size: 2.5em;*/
+		}
+		.numberBox:hover, focus {
+		    padding-left: 2%;
+		    padding-right: 2%;
+		    border: 1px solid #fff;
+		    margin-left: 10px;
+		    display: inline-block;
+		    /*font-size: 2.5em;*/
+		    cursor: pointer;
+		    background-color: beige;
+		}
+		.answer {
+		    text-align: center;
+    		/*font-size: 2.6em;*/
+    		margin-top: 10px;
+		}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	body{
+  		font-size: 4em;
+  	}
+
 }
 
-a {
-  color: #00B7FF;
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	body{
+		font-size:4em;
+	}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+	body{
+		font-size:3em;
+	}
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	body{
+		font-size:2em;
+	}
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  	body{
+		font-size:2em;
+	}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  	body{
+		font-size:3em;
+	}
+
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+		body{
+			font-size:6em;
+		}
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+  	body{
+		font-size:6em;
+	}
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+  	body{
+		font-size:4em;
+	}
+
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+  	body{
+		font-size:6em;
+	}
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+  	body{
+		font-size:6em;
+	}
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+  	body{
+		font-size:4em;
+	}
+
 }

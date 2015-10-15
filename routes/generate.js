@@ -1,16 +1,17 @@
 function generate(){
 	
 }
-function suffledarray(Array,callback){
+function suffledarray(Array1,callback){
 	var x,value;
-	for(var i=0;i<Array.length;i++)
+	var Array2=Array1;
+	for(var i=0;i<Array2.length;i++)
 	{
-		x=Math.floor(Math.random() * (Array.length -1) )+ 1 ;
-		value=Array[i];
-		Array[i]=Array[x];
-		Array[x]=value;
+		x=Math.floor(Math.random() * (Array2.length -1) )+ 1 ;
+		value=Array2[i];
+		Array2[i]=Array2[x];
+		Array2[x]=value;
 	}
-	callback(Array);
+	callback(Array2);
 //	return Array;
 }
 generate.prototype.Expression= function(expressionSize,operatorArray,numberArray,callback) {
@@ -42,28 +43,40 @@ function combineExpression(i,num,opt,callback){
 }
 generate.prototype.validateExpression=function(expression,callback){
 		var expressionInString=expression.toString().replace(/[, ]+/g, "").trim();
+		var answer;
 		try{
-			eval(expressionInString);
+			answer=eval(expressionInString);
 			var isdivide=expression.indexOf('/');
 			if(isdivide>0)
 			{
 				if(expression[isdivide-1]%expression[isdivide+1]==0)
 				{
 					console.log("here I came! "+expression.toString());
-					callback(expression);
+					suffledarray(expression,function(randomExpression){
+						callback(randomExpression,answer);
+					});
 				}
 				else
 				{
 					expression[isdivide-1]=expression[isdivide-1]*expression[isdivide+1];
+					expressionInString=expression.toString().replace(/[, ]+/g, "").trim();
 					console.log("NON dicisible! "+expression.toString());
-					callback(expression);
+					suffledarray(expression,function(randomExpression){
+						answer=eval(expressionInString);
+						callback(randomExpression,answer);
+					});
 				}
 			}
-			callback(expression);
+			else{
+					console.log('no divide available !');
+			suffledarray(expression,function(randomExpression){
+						callback(randomExpression,answer);
+					});
+			}
 		}
 		catch(e)
 		{
-			callback(null);
+			callback(null,null);
 		}
 }
 module.exports=generate;

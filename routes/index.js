@@ -22,8 +22,9 @@ io.on('connection', function (socket) {
   	socket.emit('news', { hello: 'world' });
 	socket.on('give_exp', function (data) {
     	generate1.Expression(5,['+','-','*','/'],[5,7,9,1,6,4,3,8,2],function(expression){
-			generate1.validateExpression(expression,function(validExpression){
-				socket.emit('get_exp',{exp:validExpression})
+			generate1.validateExpression(expression,function(validExpression,answer){
+				console.log(validExpression.toString()+" Answer"+ answer)
+				socket.emit('get_exp',{exp:validExpression,answer:answer});
   			});
 		});
     });
